@@ -3,11 +3,17 @@
 /* 모달 */
 .main-modal-link-section dialog {
     position: absolute;
+    width: 33rem;
+    height: 50rem;
     top: 500%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
 }
 
 .go-modal-box {
-    margin: 4rem 3.95rem 4.2rem;
+    margin: 4rem;
     width: 25.1rem;
     height: 41.8rem;
     color: #5b2386;
@@ -29,7 +35,10 @@
     font-size: 6.4rem;
     line-height: 7rem;
 }
-
+/* 모바일 버전에선 하트 안보임 */
+.hidden-heart {
+    display: none;
+}
 /* 모달 라이캣 */
 .modal-licat {
     width: 24rem;
@@ -78,15 +87,23 @@
 /* 모달 */
 @media screen and (min-width: 788px) {
     /* 모달창 사이즈 조정 */
-    .go-modal-box {
+    .main-modal-link-section dialog {
         width: 80rem;
         height: 80rem;
     }
+    .go-modal-box {
+        width: 51.5rem;
+        height: 65.6rem;
+        margin: 7.2rem 14.2rem;
+    }
     /* 모달창 타이틀 텍스트 사이즈, 간격, 마진 조정 */
     .fighting-text {
-        margin-top: 7.6rem;
         font-size: 9.6rem;
         line-height: 10.6rem;
+    }
+    /* 데스크톱은 하트 생김 */
+    .hidden-heart {
+        display: inline;
     }
     /* 라이캣 사이즈, 조정 */
     .modal-licat {

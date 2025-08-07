@@ -29,7 +29,7 @@
 @media screen and (min-width: 788px) {
     /* 푸터 마진, 갭 조정 */
     .footer-container {
-        margin-top: 13rem;
+        margin: 13rem 0 7.2rem;
         gap: 2rem;
     }
     /* 로고 사이즈 조정 */

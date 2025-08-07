@@ -1,0 +1,76 @@
+/* 모바일 퍼스트 */
+
+/* 헤더 */
+.header-title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6.9rem;
+}
+
+/* 헤더 타이틀 로고 */
+.header-title-logo {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6.5rem;
+}
+.title-logo {
+    width: 26.7rem;
+    height: 5.3rem;
+    position: absolute;
+    z-index: 100;
+}
+.title-loading {
+    width: 10.613rem;
+    height: 10.698rem;
+    position: absolute;
+    z-index: 10;
+    opacity: 0.15;
+}
+/* //헤더 타이틀 로고 */
+
+/* 헤더 텍스트 */
+.header-title-description {
+    font-family: 'tvN Enjoystories', sans-serif;
+    color: #f5df4d;
+    font-weight: var(--bold-weight);
+    font-size: 2.2rem;
+    margin-top: 3.1rem;
+}
+/* //헤더 텍스트 */
+
+/* //헤더 */
+
+
+/* 데스크톱 */
+
+/* 헤더 */
+@media screen and (min-width: 788px) {
+    /* 헤더 갭 변경 */
+    .header-title-container {
+    gap: 12.5rem;
+    }
+
+    /* 헤더 타이틀 로고 사이즈, 마진 변경 */
+    .header-title-logo {
+        margin-top: 19.4rem;
+    }
+    .title-logo {
+        width: 56.4rem;
+        height: 11.2rem;
+    }
+    .title-loading {
+        width: 26.1rem;
+        height: 26.5rem;
+    }
+
+    /* 헤더 텍스트 마진, 폰트 사이즈 변경 */
+    .header-title-description {
+        margin-top: 4.6rem;
+        font-size: 3.6rem;
+    }
+}
+/* //헤더 */

@@ -1,0 +1,302 @@
+/* 모바일 퍼스트 */
+
+/* 메인 */
+
+/* 인용문 */
+.main-quote-container {
+    display: flex;                          
+    justify-content: center;
+    align-items: center;
+    margin: 6.2rem 1.5rem 6.6rem;
+    position: relative;
+}
+.main-quote-definition {
+    width: 29rem;
+    height: 6.8rem;
+    text-align: center;
+    position: relative;
+    line-height: 2.8rem;
+    color: #fff;
+    font-size: var(--font-size-regular);
+    font-family: var(--primary-font);
+    font-weight: var(--medium-weight);
+}
+
+/* 따옴표 위치 */
+
+/* 위치 다시 잡기 - 현재 포지션 앱솔루트로 임의로 포지션 잡았으나 늘어나면서 박스 안으로 들어갔다 다시 나옴 - 어떻게 모바일일때 위치를 잡는지, 뷰포트가 늘어나면서 위치를 고정시키며 어떻게 잡는지 */
+
+.main-quote-definition::before {
+    content: url(/The-10-000-Hour-Rule/img/start-quotation.png);
+    position: absolute;
+    top: 30%;
+    left: 0;
+    transform: translate(-100%, 40%);
+}
+.main-quote-definition::after {
+    content: url(/The-10-000-Hour-Rule/img/end-quotation.png);
+    position: absolute;
+    bottom: 30%;
+    right: 0;
+    transform: translate(100%, 40%);
+}
+/* //따옴표 위치 */
+
+/* 인용문 굵은 텍스트 */
+.main-quote-definition .strong {
+    font-size: var(--font-size-medium);
+    font-weight: var(--bold-weight);
+}
+
+/* //인용문 */
+
+/* 입력, 계산 섹션 */
+.main-form-container {
+    color: #fff;
+    font-family: var(--primary-font);
+    font-size: var(--font-size-medium);
+    font-weight: var(--medium-weight);
+}
+
+/* 입력 콘텐츠 */
+.main-form-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.8rem;
+    margin-bottom: 4.9rem;
+}
+/* 입력 폼 위치 */
+.main-form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 1.9rem;
+    align-items: center;
+}
+/* 인풋 박스 */
+.input-form {
+    color: #babcbe;
+    text-align: center;
+    width: 15.6rem;
+    height: 3.8rem;
+    border-radius: 0.8rem;
+    margin: 0 0.8rem;
+    font-size: var(--font-size-medium);
+}
+
+/* //입력 콘텐츠 */
+
+/* 계산 박스 */
+.main-calculate-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+    position: relative;
+}
+/* 계산하기 클릭 버튼 */
+.main-calculate-btn {
+    top: 50%;
+    left: 20%;
+    width: 24rem;
+    height: 7.2rem;
+    padding: 0 3.5rem;
+    border-radius: 1.2rem;
+    background-color: #fcee21;
+    border: #fcee21;
+    color: #5b2386;
+    line-height: 2rem;
+    font-size: var(--font-size-medium);
+    font-weight: var(--bold-weight);
+    font-family: var(--primary-font);
+}
+/* 클릭 손가락 이미지 */
+
+/* 위치 다시 잡기 - 현재 포지션 앱솔루트로 임의로 포지션 잡았으나 늘어나면서 박스 안으로 들어갔다 다시 나옴 - 어떻게 모바일일때 위치를 잡는지, 뷰포트가 늘어나면서 위치를 고정시키며 어떻게 잡는지 */
+
+.main-calculate-click img {
+    width: 4.3rem;
+    height: 4.8rem;
+    position: absolute;
+    right: 15%;
+    top: 40%;
+}
+
+/* //계산 박스 */
+
+/* //입력, 계산 콘텐츠 */
+
+/* 결과 섹션 */
+.main-result-content {
+    margin-top: 6.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+    line-height: 3.4 rem;
+    font-family: 'Gmarket Sans',sans-serif;
+    color: #fff;
+    font-size: var(--font-size-medium);
+    font-weight: var(--medium-weight);
+}
+
+/* 폼 결과 js 배우고 구현 */
+.main-result-job-title,
+.main-result-days {
+    padding: 1.2rem;
+    font-size: var(--font-size-large);
+    font-weight: var(--bold-weight);
+}
+/* //폼 결과 js 배우고 구현 */
+
+/* //결과 섹션 */
+
+/* 모달창 띄우기 */
+.main-modal-link-section {
+    position: relative;
+}
+.main-modal-link-container {
+    margin-top: 5.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.3rem;
+}
+/* 훈련하러가기 버튼 */
+.modal-go-btn {
+    width: 20.3rem;
+    height: 4.6rem;
+    border-radius: 5.6rem;
+    box-shadow: 2px 4px 10px 0 rgba(0, 0, 0, 0.15);
+    background-color: #fcee21;
+    border: #fcee21;
+    color: #5b2386;
+    font-size: var(--font-size-medium);
+    font-family: 'Gmarket Sans', sans-serif;
+    font-weight: var(--bold-weight);
+}
+/* 공유하기 버튼 */
+.modal-share-btn {
+    background-color: #fff;
+    border: #fff;
+    width: 10.2rem;
+    height: 4.6rem;
+    border-radius: 5.6rem;
+    box-shadow: 2px 4px 10px 0 rgba(0, 0, 0, 0.15);
+    color: #5b2386;
+    font-size: var(--font-size-medium);
+    font-family: 'Gmarket Sans', sans-serif;
+    font-weight: var(--bold-weight);
+}
+/* //모달창 띄우기 */
+/* //메인 */
+
+
+/* 데스크톱 */
+
+/* 메인 */
+/* 인용문 */
+@media screen and (min-width: 788px) {
+    /* 인용문 텍스트 박스 크기 조정 */
+    .main-quote-definition {
+        width: 37.3rem;
+        height: 8.5rem;
+    }
+
+    /* 따옴표 크기 조정 */
+    .main-quote-definition::before {
+    content: url(/The-10-000-Hour-Rule/img/desktop-start-quotation.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, 30%);
+}
+.main-quote-definition::after {
+    content: url(/The-10-000-Hour-Rule/img/desktop-end-quotation.png);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translate(50%, -70%);
+}
+}
+/* //인용문 */
+
+/* 입력, 계산 섹션 */
+
+/* 입력 콘텐츠 */
+@media screen and (min-width: 788px) {
+    /* 입력 콘텐츠 갭 조정 */
+    .main-form-content {
+        gap: 2.7rem;
+    }
+    /* 입력 폼 주축, 갭 변경 */
+    .main-form-group {
+        flex-direction: row;
+        gap: 1.7rem;
+    }
+    /* 입력 폼 사이즈 조정 */
+    .input-form {
+        width: 22.8rem;
+        height: 5.7rem;
+    }
+}
+/* //입력 콘텐츠 */
+
+/* 계산 박스 */
+@media screen and (min-width: 788px) {
+    /* 계산 박스 갭, 마진 조정 */
+    .main-calculate-box {
+        gap: 0.7rem;
+        margin-top: 11.5rem;
+    }
+    /* 계산 버튼 사이즈, 박스 테두리 조정 */
+    .main-calculate-btn {
+        width: 56.5rem;
+        height: 6.6rem;
+        border-radius: 5.6rem;
+    }
+    /* 클릭 이미지 사이즈, 위치 조정 */
+    .main-calculate-click {
+        width: 6.4rem;
+        height: 7.2rem;
+        position: absolute;
+        right: 25%;
+        top: -20%;
+    }
+}
+/* //계산 박스 */
+
+/* //입력, 계산 섹션 */
+
+/* 결과 섹션 */
+@media screen and (min-width: 788px) {
+    /* 결과 콘텐츠 마진, 갭. 텍스트 간격 조정 */
+    .main-result-content {
+        margin-top: 14.7rem;
+        gap: 1.7rem;
+        line-height: 7.2rem;
+    }
+}
+/* //결과 섹션 */
+
+/* 모달창 띄우기 */
+@media screen and (min-width: 788px) {
+    /* 모달창 갭, 마진 조정 */
+    .main-modal-link-container {
+        gap: 1.8rem;
+        margin-top: 12.7rem;
+    }
+    /* 모달 버튼 사이즈 */
+    .modal-go-btn {
+        width: 35.6rem;
+        height: 6.6rem;
+    }
+    .modal-share-btn {
+        width: 19.1rem;
+        height: 6.6rem;
+    }
+}
+/* //모달창 띄우기 */
+
+/* //메인 */
+

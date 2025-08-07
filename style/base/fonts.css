@@ -1,0 +1,25 @@
+/* 폰트 */
+@font-face {
+    font-family: 'tvN Enjoystories';
+    src: url(/The-10-000-Hour-Rule/font/tvN10font_OTF/OTF/tvN\ 즐거운이야기OTF\ Bold.otf) format(opentype);
+    font-style: normal;
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'Gmarket Sans';
+    src: url(/The-10-000-Hour-Rule/font/GmarketSansOTF/GmarketSansMedium.otf) format(opentype);
+    font-style: normal;
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Gmarket Sans';
+    src: url(/The-10-000-Hour-Rule/font/GmarketSansOTF/GmarketSansBold.otf) format(opentype);
+    font-style: normal;
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'Noto Sans KR';
+    src: url(/The-10-000-Hour-Rule/font/Noto_Sans_KR/static/NotoSansKR-Regular.ttf) format(truetype);
+    font-style: normal;
+    font-weight: 400;
+}

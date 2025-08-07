@@ -1,0 +1,11 @@
+/* 변수 */
+:root {
+    --primary-font: 'Gmarket Sans', sans-serif;
+    --bold-weight: 700;
+    --medium-weight: 500;
+    --regular-weight: 400;
+    --font-size-small: clamp(0.9rem, 1vw, 1.2rem);
+    --font-size-regular: clamp(1.4rem, 1.2vw, 1.8rem);
+    --font-size-medium: clamp(1.4rem, 1.5vw, 2.4rem);
+    --font-size-large: clamp(2.4rem, 4vw, 7.2rem);
+}

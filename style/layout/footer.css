@@ -1,0 +1,41 @@
+/* 모바일 퍼스트 */
+
+/* 푸터 */
+.footer-container {
+    margin: 8.3rem 0 3.2rem;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 1.7rem;
+}
+.footer-description {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: var(--regular-weight);
+    color: #fff;
+    font-size: var(--font-size-small);
+    opacity: 0.7;
+    line-height: 1.5rem;
+    text-align: center;
+}
+.weniv-logo {
+    width: 9.1rem;
+    height: 1.8rem
+}
+/* //푸터 */
+
+/* 데스크톱 */
+
+/* 푸터 */
+@media screen and (min-width: 788px) {
+    /* 푸터 마진, 갭 조정 */
+    .footer-container {
+        margin-top: 13rem;
+        gap: 2rem;
+    }
+    /* 로고 사이즈 조정 */
+    .weniv-logo {
+        width: 12.5rem;
+        height: 2.5rem;
+    }
+}
+/* //푸터 */

@@ -1,0 +1,109 @@
+/* 모바일 퍼스트 */
+
+/* 모달 */
+.main-modal-link-section dialog {
+    position: absolute;
+    top: 500%;
+}
+
+.go-modal-box {
+    margin: 4rem 3.95rem 4.2rem;
+    width: 25.1rem;
+    height: 41.8rem;
+    color: #5b2386;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.4rem;
+}
+
+/* 모달 타이틀 텍스트 */
+.modal-box-text {
+    text-align: center;
+    font-family: 'tvN Enjoystories', sans-serif;
+    font-size: 3.6rem;
+    font-weight: var(--bold-weight);
+    line-height: 4rem;
+}
+.fighting-text {
+    font-size: 6.4rem;
+    line-height: 7rem;
+}
+
+/* 모달 라이캣 */
+.modal-licat {
+    width: 24rem;
+    height: 18rem;
+    object-fit: cover;
+}
+
+/* 모달 훈련하러가기 버튼 */
+.modal-tranning-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24.1rem;
+    height: 6.8rem;
+    background-color: #fcee21;
+    border: #fcee21;
+    border-radius: 1.3rem;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+    text-align: center;
+}
+/* 훈련하러가기 텍스트 박스 */
+.tranning-text-box {
+    padding: 1.8rem 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 모바일에선 두줄 데스크톱에선 한줄로 만드는게 html>br도 해보고 패딩, 라인헤이트 줬으나 디자인에서 요구하는 텍스트 끊어지지가 않았음 - 디스플레이 플렉스로 모바일에선 컬럼, 데스크톱에선 로우로 해결 (데스크톱 로우로 했을떄 갭 차이가 진짜 띄어쓰기의 간격이랑 부정확함 - 이에 대해 알아보기 - 플렉스 말고 구현할 수 있는 다른 방법이 있는지, 아니면 간격을 알아내서 해야하는지) */
+
+/* 모달 훈련하러가기 버튼 텍스트 */
+.tranning-text {
+    text-align: center;
+    color: #5b2386;
+    font-family: 'Gmarket Sans', sans-serif;
+    font-size: var(--font-size-medium);
+    /* padding: 1.8rem 4.5rem; */
+    line-height: 1.2;
+    font-weight: var(--bold-weight);
+    word-break: keep-all;
+}
+/* //모달 */
+
+/* 데스크톱 */
+
+/* 모달 */
+@media screen and (min-width: 788px) {
+    /* 모달창 사이즈 조정 */
+    .go-modal-box {
+        width: 80rem;
+        height: 80rem;
+    }
+    /* 모달창 타이틀 텍스트 사이즈, 간격, 마진 조정 */
+    .fighting-text {
+        margin-top: 7.6rem;
+        font-size: 9.6rem;
+        line-height: 10.6rem;
+    }
+    /* 라이캣 사이즈, 조정 */
+    .modal-licat {
+        width: 43.3rem;
+        height: 33.7rem;
+        margin: 2.9rem 0 7.4rem;
+    }
+    /* 훈련하러가기 버튼 사이즈, 모서리 조정 */
+    .modal-tranning-link {
+        width: 50.8rem;
+        height: 6.6rem;
+        border-radius: 5.6rem;
+        margin-bottom: 6.8rem;
+    }
+    /* 텍스트 주축 조정 */
+    .tranning-text-box {
+        flex-direction: row;
+        gap: 1rem;
+    }
+}

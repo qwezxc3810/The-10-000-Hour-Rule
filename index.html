@@ -25,15 +25,13 @@
     <!-- 헤더 -->
     <header class="header">
         <section class="header-title-container">
-            <h1 class="sr-only">1만 시간의 법칙</h1>
-
+            
             <!-- 헤더 타이틀 로고 -->
-            <a href="./index.html">
-                <div class="header-title-logo">
-                <img class="title-logo" src="./img/title.png" alt="1만 시간의 법칙 타이틀">
-                <img class="title-loading" src="./img/loading.png" alt="노란색 시계">
-                </div>
-            </a>
+            <h1> <span class="sr-only">1만 시간의 법칙</span>
+                <a class="header-title-logo" href="./index.html">
+                    <img class="title-logo" src="../The-10-000-Hour-Rule/img/title.png" alt="">
+                </a>
+            </h1>
             <!-- //타이틀 로고 -->
             
             <!-- 헤더 텍스트 -->
@@ -50,8 +48,10 @@
         <section class="main-quote-container">
             <h2 class="sr-only">1만시간의 법칙이란?</h2>
             <p class="main-quote-definition">
-                <span class="strong">1만 시간의 법칙</span>은 <br>
+                <span class="quote-definition-box">
+                <dfn class="definition">1만 시간의 법칙</dfn>은 <br>
                 어떤 분야의 전문가가 되기 위해서는 <br> 최소한 1만 시간의 훈련이 필요하다는 법칙이다.
+                </span>
             </p>
         </section>
         <!-- //인용문 -->
@@ -88,13 +88,8 @@
                 
                 <!-- 계산 박스 -->
                 <div class="main-calculate-box">
-                <div class="main-calculate">
                     <button type="button" class="main-calculate-btn">나는 며칠 동안 훈련을 해야 1만 시간이 될까?
                     </button>
-                </div>
-                <div class="main-calculate-click">
-                    <img src="./img/click.png" alt="클릭해주세요">
-                </div>
             </div>
         </form>
                 <!-- //계산 박스 -->
@@ -107,7 +102,7 @@
             <div class="main-result-content">
                 <p>당신은 
                     <!-- 분야 js 입력값 -->
-                    <span class="main-result-job-title">프로그래밍</span>
+                    <output for="job-input" id="result-job" name="result-job" class="main-result-job-title">프로그래밍</output>
 
                     전문가가 되기 위해서
                 </p>

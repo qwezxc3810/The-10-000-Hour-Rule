@@ -6,30 +6,31 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 6.9rem;
+    gap: 3.2rem;
 }
 
 /* 헤더 타이틀 로고 */
 .header-title-logo {
+    display: block;
+    width: 11rem;
+    height: 11rem;
+    background-image: url(/The-10-000-Hour-Rule/img/clock.png);
+    background-size: 11rem 11rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 4rem;
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 6.5rem;
-}
-.title-logo {
-    width: 26.7rem;
-    height: 5.3rem;
-    position: absolute;
-    z-index: 100;
-}
-.title-loading {
-    width: 10.613rem;
-    height: 10.698rem;
-    position: absolute;
-    z-index: 10;
-    opacity: 0.15;
-}
+    }
+
+    
+    .title-logo {
+        width: 27.8rem;
+        height: 5.5rem;
+        position: absolute;
+        top: 25%;
+        left: -85%;
+        z-index: 100;
+    }
 /* //헤더 타이틀 로고 */
 
 /* 헤더 텍스트 */
@@ -51,25 +52,24 @@
 @media screen and (min-width: 788px) {
     /* 헤더 갭 변경 */
     .header-title-container {
-    gap: 12.5rem;
+        gap: 5.2rem;
     }
 
     /* 헤더 타이틀 로고 사이즈, 마진 변경 */
     .header-title-logo {
-        margin-top: 19.4rem;
+        margin-top: 12rem;
+        width: 26rem;
+        background-size: 22rem;
+        height: 22rem;
     }
     .title-logo {
         width: 56.4rem;
         height: 11.2rem;
-    }
-    .title-loading {
-        width: 26.1rem;
-        height: 26.5rem;
+        left: -65%;
     }
 
     /* 헤더 텍스트 마진, 폰트 사이즈 변경 */
     .header-title-description {
-        margin-top: 4.6rem;
         font-size: 3.6rem;
     }
 }

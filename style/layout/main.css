@@ -155,7 +155,7 @@
     align-items: center;
     text-align: center;
     gap: 1.5rem;
-    line-height: 3.4 rem;
+    line-height: 3.4rem;
     font-family: 'Gmarket Sans',sans-serif;
     color: #fff;
     font-size: var(--font-size-medium);
@@ -166,6 +166,7 @@
 .main-result-job-title,
 .main-result-days {
     padding: 1.2rem;
+    vertical-align: middle;
     font-size: var(--font-size-large);
     font-weight: var(--bold-weight);
 }
@@ -187,7 +188,7 @@
 .modal-go-btn {
     width: 20.3rem;
     height: 4.6rem;
-    border-radius: 5.6rem;
+    border-radius: 1.2rem;
     box-shadow: 2px 4px 10px 0 rgba(0, 0, 0, 0.15);
     background-color: #fcee21;
     border: #fcee21;
@@ -202,7 +203,7 @@
     border: #fff;
     width: 10.2rem;
     height: 4.6rem;
-    border-radius: 5.6rem;
+    border-radius: 1.2rem;
     box-shadow: 2px 4px 10px 0 rgba(0, 0, 0, 0.15);
     color: #5b2386;
     font-size: var(--font-size-medium);
